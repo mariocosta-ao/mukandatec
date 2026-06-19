@@ -1,0 +1,135 @@
+/* ===========================================================
+   MUKANDA TEC — RESPONSIVE.CSS
+   Ajustes responsivos por breakpoint (mobile-first overrides)
+   =========================================================== */
+
+/* ===========================
+   TABLET (até 991px)
+   =========================== */
+@media (max-width: 991.98px){
+  :root{
+    --space-2xl: 4rem;
+    --space-xl: 3rem;
+  }
+
+  .mk-hero{
+    padding: var(--space-xl) 0;
+    text-align: center;
+  }
+
+  .mk-hero .lead{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mk-hero-visual{
+    margin-top: var(--space-lg);
+  }
+
+  .mk-process-step{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mk-trust-logos{
+    gap: var(--space-md);
+  }
+}
+
+/* ===========================
+   MOBILE (até 767px)
+   =========================== */
+@media (max-width: 767.98px){
+  .section{
+    padding: var(--space-xl) 0;
+  }
+
+  .mk-cta{
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .mk-feature-row{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mk-feature-icon{
+    margin-bottom: var(--space-xs);
+  }
+
+  .mk-footer-newsletter{
+    flex-direction: column;
+  }
+
+  .mk-footer-newsletter button{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .mk-whatsapp-float{
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .mk-back-to-top{
+    width: 38px;
+    height: 38px;
+    bottom: 16px;
+    left: 16px;
+  }
+}
+
+/* ===========================
+   MOBILE PEQUENO (até 575px)
+   =========================== */
+@media (max-width: 575.98px){
+  .mk-card{
+    padding: var(--space-md);
+  }
+
+  .mk-stat-number{
+    font-size: 1.75rem;
+  }
+
+  .mk-trust-logos{
+    gap: var(--space-sm) var(--space-md);
+  }
+
+  .mk-trust-logos span{
+    font-size: 1rem;
+  }
+}
+
+/* ===========================
+   NAVBAR MOBILE (offcanvas style collapse)
+   =========================== */
+@media (max-width: 991.98px){
+  .mk-navbar .navbar-collapse{
+    background: var(--mk-white);
+    margin-top: var(--space-sm);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+  }
+
+  .mk-navbar .nav-link.active::after{
+    display: none;
+  }
+
+  .mk-navbar .nav-link.active{
+    background: var(--mk-blue-light);
+    color: var(--mk-blue);
+    border-radius: var(--radius-sm);
+  }
+
+  .mk-navbar .d-flex.gap-2{
+    margin-top: var(--space-sm);
+    flex-direction: column;
+  }
+}
